@@ -1,0 +1,12 @@
+Font: DNF Bit Bit v2  Style: Regular
+Point Size: 76   SP/PD Ratio: 6.6%
+
+Characters included: 2487/2487
+Missing characters: 0
+Excluded characters: 0
+
+Characters missing from font file:
+----------------------------------------
+
+Characters excluded from packing:
+----------------------------------------
