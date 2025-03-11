@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -12,6 +13,7 @@ namespace StarterAssets
 		public Vector2 look;
 		public bool jump;
 		public bool sprint;
+		public bool interaction;
 
 		[Header("Movement Settings")]
 		public bool analogMovement;
@@ -39,6 +41,11 @@ namespace StarterAssets
 			JumpInput(value.isPressed);
 		}
 
+		public void OnInteraction(InputValue value)
+		{
+			InteractionInput(value.isPressed);
+		}
+
 		public void OnSprint(InputValue value)
 		{
 			SprintInput(value.isPressed);
@@ -60,6 +67,11 @@ namespace StarterAssets
 		{
 			jump = newJumpState;
 		}
+
+		public void InteractionInput(bool newInteration)
+		{
+			interaction = newInteration;
+        }
 
 		public void SprintInput(bool newSprintState)
 		{
